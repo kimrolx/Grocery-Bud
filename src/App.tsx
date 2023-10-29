@@ -1,3 +1,4 @@
+import { ToastContainer } from 'react-toastify';
 import { useState, useEffect } from 'react';
 import DeleteItem from './components/DeleteItem';
 import AddItem from './components/AddItem';
@@ -47,6 +48,7 @@ function App() {
         </div>
         </form>
       </section>
+      <ToastContainer position='top-center'/>
     </div>
   );
 }

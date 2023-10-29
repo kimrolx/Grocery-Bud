@@ -84,7 +84,7 @@ h3 {
 
 h4 {
   font-weight: 500;
-  font-size: 1.563rem
+  font-size: 2rem;
 }
 
 h5 {
@@ -240,15 +240,19 @@ ul {
 }
 
 .section-center {
-  width: 100vw;
+  width: 90vw;
   margin: 0 auto;
   margin-top: 8rem;
+  margin-bottom: 8rem;
   max-width: 30rem;
-  background: var(--white);
   border-radius: 15px 65px;
   padding: 2rem;
-  box-shadow: var(--shadow-1);
-  transition: var(--transition)
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.6px);
+  -webkit-backdrop-filter: blur(1.6px);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  transition: var(--transition);
 }
 
 .section-center:hover {
@@ -256,6 +260,7 @@ ul {
 }
 
 form h4 {
+  color: white;
   text-align: center;
   margin-bottom: 1.5rem
 }
@@ -281,6 +286,7 @@ form h4 {
 }
 
 .items {
+  color: white;
   margin-top: 2rem;
   display: grid;
   row-gap: 1rem
@@ -304,14 +310,23 @@ form h4 {
   letter-spacing: var(--letterSpacing);
 }
 
+.single-item:hover p{
+  color: var(--black);
+}
+
 .single-item:hover{
-  box-shadow: var(--shadow-3)
+  background: var(--white);
+  box-shadow: -15px 30px 50px rgba(0, 0, 0, 0.5);
+  transform: scale(1.15) translateX(30px) translateY(-15px);
+  box-shadow: var(--shadow-3);
 }
 
 .remove-btn {
+  color: var(--black);
   padding: .35rem .75rem;
   font-size: .75rem;
-  background: var(--black)
+  font-weight: 700;
+  background: var(--white);
 }
 
 .Toastify__toast {
