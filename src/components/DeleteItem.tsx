@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -23,9 +23,7 @@ const Item = ({ text, id, onDelete }: ItemProps) => {
 
   return (
     <div className={`single-item ${isChecked ? 'checked' : ''}`}>
-      <div className="checkbox" onClick={toggleCheckbox}>
-        {isChecked ? '✓' : '▢'}
-      </div>
+      <input type="checkbox" checked={isChecked} onChange={toggleCheckbox}/>
       <p style={{ textDecoration: isChecked ? 'line-through' : 'none', textTransform: 'capitalize' }}>
         {text}
       </p>

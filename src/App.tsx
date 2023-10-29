@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import DeleteItem from './components/DeleteItem';
 import AddItem from './components/AddItem';
 import './index.css';
@@ -33,6 +33,7 @@ function App() {
         <div className="Toastify"></div>
         <form>
           <h4>Grocery Bud</h4>
+          <div className="title-underline"/>
             <AddItem onAdd={addItem} />
         <div className="items">
           {items.map((item) => (
